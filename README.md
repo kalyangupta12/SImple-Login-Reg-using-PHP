@@ -76,6 +76,42 @@ if (!$con) {
 }
 ?>
 ```
+### Install PHPMailer by downloading it from [PHPMailer GitHub](https://github.com/PHPMailer/PHPMailer). Place the `PHPMailer` folder in your project directory.
+
+### Update the `reset_password.php` file with your email credentials for sending OTP using PHPMailer:
+   ```php
+   use PHPMailer\PHPMailer\PHPMailer;
+   use PHPMailer\PHPMailer\Exception;
+
+   require 'PHPMailer/src/Exception.php';
+   require 'PHPMailer/src/PHPMailer.php';
+   require 'PHPMailer/src/SMTP.php';
+
+   $mail = new PHPMailer(true);
+   // Set up your email configurations here
+   ```
+
+## Usage
+
+1. **Register**: Go to the registration page (`register.php`), enter your details, and register.
+2. **Login**: Go to the login page (`login.php`), enter your email and password to log in. After a successful login, you will be redirected to a welcome page displaying your name.
+3. **Reset Password**:
+   - Go to the reset password page (`resetpassword.php`).
+   - Enter your email. An OTP will be sent to your email.
+   - Verify the OTP and then reset your password.
+
+## PHPMailer Setup
+
+1. Download and include PHPMailer in your project.
+2. Update the `reset_password.php` to include PHPMailer, and use your SMTP server settings.
+
+## Files
+
+- `register.php`: Handles user registration.
+- `login.php`: Handles user login.
+- `dashboard.php`: Displays the user's name after successful login.
+- `resetpassword.php`: Initiates the password reset process by sending an OTP to the user's email.
+- `verify_otp.php`: Verifies the OTP and allows the user to reset their password.
 
 ### Step 4: Run the Project
 
