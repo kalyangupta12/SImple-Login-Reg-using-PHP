@@ -30,7 +30,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail = new PHPMailer\PHPMailer\PHPMailer();
 
         try {
-            // SMTP configuration is for Hostinger Webmail , Please Check out GMail Configuration on Mail
+            // SMTP configuration is for Hostinger Webmail , Please Check out GMail Configuration on Internet
             $mail->isSMTP();
             $mail->Host = 'smtp.hostinger.com';
             $mail->SMTPAuth = true;
