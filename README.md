@@ -121,11 +121,6 @@ if (!$con) {
    - **Login Page**: `http://localhost/your-project-folder/login.php`
    - **Welcome Page (after login)**: `http://localhost/your-project-folder/hello.php`
 
-## Usage
-
-1. **Register** a new account with your username, email, and password.
-2. **Log in** with your registered email and password.
-3. After logging in, you will be redirected to the welcome page, where your **username** will be displayed.
 
 ## Security Considerations
 
