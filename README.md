@@ -58,7 +58,7 @@ CREATE TABLE `signup-users` (
 );
 ```
 
-### Step 3: Configure Database Connection
+### Step 3: Configure Database Connection & Forgot Password functionality with OTP in E-mail
 
 Edit the `includes/db_connect.php` file with your database credentials.
 
